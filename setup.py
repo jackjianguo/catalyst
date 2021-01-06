@@ -282,18 +282,18 @@ conditional_arguments = {
 }
 
 setup(
-    name='enigma-catalyst',
-    url='https://enigma.co',
+    name='rt-catalyst',
+    url='https://rt.co',
     version=versioneer.get_version(),
     cmdclass=LazyBuildExtCommandClass(versioneer.get_cmdclass()),
-    description='An algorithmic trading backtester for crypto-assets.',
+    description='An algorithmic trading backtester for crypto-assets. rt',
     entry_points={
         'console_scripts': [
-            'catalyst = catalyst.__main__:main',
+            'rtcatalyst = catalyst.__main__:main',
         ],
     },
-    author='Enigma MPC, Inc.',
-    author_email='dev@enigma.co',
+    author='rt MPC, Inc.',
+    author_email='dev@rt.co',
     packages=find_packages(include=['catalyst', 'catalyst.*']),
     ext_modules=ext_modules,
     include_package_data=True,

@@ -49,6 +49,7 @@ except NameError:
 @click.version_option()
 def main(extension, strict_extensions, default_extension):
     """Top level catalyst entry point.
+       build 2020-01-06 python 3.6 Ubuntu 20.04 LTS by rt.
     """
     # install a logbook handler before performing any other operations
     logbook.StderrHandler().push_application()
