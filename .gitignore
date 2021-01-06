@@ -6,6 +6,11 @@ tmp/**/*
 tmp/*
 *.swp
 *~
+
+# keqingdaren
+*.csv
+hello.*
+
 #mac autosaving file
 .DS_Store
 *.py[co]
