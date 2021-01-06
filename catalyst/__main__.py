@@ -300,7 +300,8 @@ def run(ctx,
     elif output == '-':
         click.echo(str(perf), sys.stdout)
     elif output != os.devnull:  # make the catalyst magic not write any data
-        perf.to_pickle(output)
+        # perf.to_pickle(output)
+        pass
 
     return perf
 
@@ -514,7 +515,8 @@ def live(ctx,
     if output == '-':
         click.echo(str(perf), sys.stdout)
     elif output != os.devnull:  # make the catalyst magic not write any data
-        perf.to_pickle(output)
+        # perf.to_pickle(output)
+        pass
 
     return perf
 

@@ -11,3 +11,9 @@ conda install --name py36 --freeze-installed bcolz
 pip install workspace/github/catalyst
 
 rtcatalyst
+
+.catalyst/data/exchanges/binance/cctx_markets.json
+.catalyst/data/exchanges/binance/symbols.json
+.catalyst/data/exchanges/binance/symbols_local.json
+
+
