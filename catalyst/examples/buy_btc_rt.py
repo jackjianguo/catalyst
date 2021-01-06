@@ -33,6 +33,8 @@ log = Logger('buy eth rt')
 def initialize(context):
     log.info('=== initializing algo')
     context.asset = symbol('btc_usdt')
+    context.set_commission(maker=0.0004, taker=0.0004)
+    context.set_slippage(slippage=0.0001)
 
 
 def handle_data(context, data):
