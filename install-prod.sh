@@ -13,3 +13,7 @@ conda install --name catalyst --freeze-installed bcolz
 pip install enigma-catalyst matplotlib
 
 pip install numpy==1.17.0
+
+pip uninstall enigma-catalyst
+
+
