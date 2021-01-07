@@ -8,3 +8,6 @@ rtcatalyst ingest-exchange -x binance -f daily --csv ~/mockdata/binance_ethusdt.
 
 rtcatalyst run -f buy_eth_rt.py \
 --data-frequency minute -x binance -s 2020-01-01 -e 2020-01-05 -c usdt --capital-base 10000 -o test.pickle
+
+rtcatalyst run -f buy_btc_rt.py \
+--data-frequency daily -x binance -s 2020-01-01 -e 2020-01-10 -c usdt --capital-base 10000 -o test.csv
