@@ -108,7 +108,10 @@ class CCXT(Exchange):
             timestamp = os.path.getmtime(filename)
             dt = pd.to_datetime(timestamp, unit='s', utc=True)
 
-            if dt >= pd.Timestamp.utcnow().floor('1D'):
+            # offline Manual update
+            # if dt >= pd.Timestamp.utcnow().floor('1D'):
+            if True:
+                log.warn('==> loaded markets for {}, file update time {}'.format(self.name, dt))
                 with open(filename) as f:
                     self.markets = json.load(f)
 
