@@ -721,8 +721,11 @@ class ExchangeBundle:
                 params['start_date'] = asset_def['start_date'] \
                     if asset_def['start_date'] < start_dt else start_dt
 
+                # fix first minute then daily
+                # params['end_date'] = asset_def[end_dt_key] \
+                #    if asset_def[end_dt_key] > end_dt else end_dt
                 params['end_date'] = asset_def[end_dt_key] \
-                    if asset_def[end_dt_key] > end_dt else end_dt
+                    if (asset_def[end_dt_key] != 'N/A') and (asset_def[end_dt_key] > end_dt) else end_dt
 
                 params['end_daily'] = end_dt \
                     if data_frequency == 'daily' else asset_def['end_daily']
