@@ -76,6 +76,7 @@ zipline.iml
 
 # PyCharm custom settings
 .idea
+.vscode
 
 # Pickle files
 *.pickle
