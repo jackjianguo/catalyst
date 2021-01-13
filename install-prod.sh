@@ -16,4 +16,14 @@ pip install numpy==1.17.0
 
 pip uninstall enigma-catalyst
 
+# 编译时安装
+pip install -e workspace/catalyst
+
+# pip freeze 会自动生成request.txt 文件
+pip freeze
+
+pip install -r requestments.txt
+
+
+
 
